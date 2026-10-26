@@ -1,0 +1,22 @@
+print("="*112)
+words=[]
+while True:
+        filename=input("Enter u're file please : ")
+        try:
+            with open (filename,encoding="utf-8") as file:
+             for line in file:
+                 for word in line.split():
+                     if word not in words:
+                         words.append(word)
+                     
+                 
+            break
+        except: FileNotFoundError
+        print(" This operation is not realy succesfull. please try again  ")
+words.sort
+for i in range(0, len(words), 9):
+    row = words[i:i + 9]
+    print(", ".join(row))
+
+        
+print("="*112)
