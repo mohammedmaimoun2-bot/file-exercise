@@ -1,7 +1,7 @@
 print("="*112)
 words=[]
 while True:
-        filename=input("Enter u're file please : ")
+        filename=input("Enter u're file please : ") #here u can to enter name of u're text >ex:test.txt
         try:
             with open (filename,encoding="utf-8") as file:
              for line in file:
